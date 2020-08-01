@@ -1,0 +1,194 @@
+@font-face { 
+  font-family: Boton; src: url('../font/Boton\ Regular.ttf'); 
+  font-family: 'Boton Bold'; src: url('../font/Boton\ Bold.ttf');
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+  font-family: 'Boton', sans-serif;
+  overflow-x: hidden;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+
+/*Header*/
+.header {
+  background: #412856;
+  position: relative;
+  height: 222px;
+}
+
+.header h1{
+    font-family: 'Boton Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 95px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+/*Imagem de fundo*/
+.fundo{
+  width: 100%;
+}
+
+/*fundo gradiente*/
+div.gradiente{
+  width: 100%;
+  background: linear-gradient( #7E649F 0%, #130D36 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.descricao{
+ 
+  color: #FFFFFF;
+  font-family: 'Boton';
+  font-size: 26px;
+  line-height: 26px;
+  
+  /* or 100% */
+  text-align: center;
+  margin: 2rem;
+}
+
+/*Botão*/
+.botao{
+  width: 368px;
+  height: 62px;
+  background: #AD72DF;
+  color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  font-family: 'Boton Bold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  margin: 1rem;
+}
+
+.py-10{
+  padding: 4rem;
+  color: #FFFFFF;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.py-10 h3{
+  font-family: 'Boton Bold';
+  font-size: 22px;
+  line-height: 26px;
+  padding: 1rem 0rem 2rem;
+}
+
+.py-10 h4{
+  font-family: 'Boton Bold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 20px;
+  
+}
+
+.py-10 h5{
+  font-family: 'Boton';
+  text-transform: uppercase;
+}
+
+.py-10 h6{
+  font-family: 'Boton';
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* Footer*/
+.footer {
+  background: #000000;
+  height: 13.4375rem;
+  font-size: 12px;
+  padding: 15px;
+  position: relative;
+}
+
+.footer h6{
+    font-family: 'Boton';
+    font-size: 26px;
+    line-height: 26px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
